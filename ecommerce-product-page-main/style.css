@@ -1,0 +1,291 @@
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    font-family:"kumbh sans";
+}
+
+@media (max-width: 1420px) {
+    a {
+        display: none;
+    }
+
+    .left-div {
+    width: 170px;
+}
+    .product-image-div {
+        display: block;
+    }
+}
+
+@media (min-width: 1419px) {
+    .hamberger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        margin-left: 354px;
+        margin-right: 354px;
+    }
+}
+
+
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid hsl(225, 19%, 92%);
+    
+}
+
+.left-div {
+    display: flex;
+    align-items: center;
+}
+
+.hamberger-menu {
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+}
+
+li:hover {
+    cursor: pointer;
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+    
+}
+
+a {
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+}
+
+.logo {
+    margin-right: 50px;
+    width: 130px;
+    height: fit-content;
+    padding-bottom: 50px;
+}
+
+h5 {
+    color: hsl(26, 100%, 55%);
+    font-size: 12px;
+}
+
+h4 {
+    color: hsl(219, 9%, 45%);
+    font-size: 13px;
+    margin: 0px;
+}  
+
+p {
+    text-align: justify;
+    color: hsl(219, 9%, 45%);
+    font-size: 14px;
+}
+
+.right-div {
+    align-items: center;
+}
+
+.avatar-icon {
+    width: 40px;
+    margin-left: 20px;
+    padding-right: 2px;
+    border-radius: 50%;
+}
+
+.avatar-icon:hover {
+    border: 1px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+    width: 38px;
+}
+
+.cart-icon {
+    width: 20px;
+    padding-bottom: 5px;
+    position:relative;
+}
+
+.cart-icon:hover {
+    cursor: pointer;
+}
+
+.body-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+    padding-left: 25px;
+}
+
+.product-image-div {
+    padding-right: 50px;
+    
+}
+
+.main-product-image {
+    width: 354px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.product-image-thumbnail-div {
+    width: 354px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-image-thumbnail {
+    width: 75px;
+    border-radius: 10px;
+}
+
+
+.product-image-thumbnail:hover {
+    opacity: 0.6;
+}
+
+
+.product-detail-div {
+    padding-left: 50px;
+}
+
+.discount {
+    font-size: 15px;
+    background-color: hsl(25, 72%, 79%);
+    padding: 3px 7px 3px 7px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+#quantity {
+    background-color: hsl(229, 23%, 91%);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.button-div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#plus_button, #minus_button {
+    width: 40px;
+    height: 40px;
+    background-color:hsl(229, 23%, 91%) ;
+    border: none;
+    color:hsl(26, 100%, 55%) ;
+    font-size: 23px;
+   
+}
+
+#plus_button {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#minus_button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 20px;
+}
+
+#add_to_cart_button {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+}
+
+.cart-image {
+    color: white;
+    width: 18px;
+    padding-right: 5px;
+}
+
+.cart-menu {
+    width: 280px;
+    border-radius: 10px;
+    position: absolute;
+    right: 280px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(96, 94, 94);
+    border: 1px solid grey;
+    background-color: white;
+    padding-top: 15px;
+    font-style: bold;
+    color: grey;
+    font-size: 13px;
+}
+
+.cart-items {
+    display: flex;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    border-top: 1px solid grey;
+    text-align: left;
+}
+
+.zoomed-image-div {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.zoomed-image {
+    width: 500px;
+    border-radius: 15px;
+    position: fixed;
+    top: 100px;
+    left: 500px;
+    
+}
+
+.close-icon {
+    position: fixed;
+    top: 250px;
+    left: 250px;
+    width: 15px;
+    height: 15px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    };
+
+    .body-div {
+        display: block;
+        width: 355px;
+    }  
+    .product-image-div, .product-detail-div {
+        display: block;
+        padding-left: 0px;
+    }
+}

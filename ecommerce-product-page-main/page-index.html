@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce Product Page</title>
+    
+</head>
+<body>
+    <div class="header-div">
+        <div class="left-div">
+            <img src="images/hamburger-menu.svg" alt="hambergaer menu" class="hamberger-menu">
+            <img src="images/logo.svg" alt="logo" class="logo">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+        <div class="right-div" id="right_div">
+            <img src="images/icon-cart.svg" alt="Cart icon" class="cart-icon" id="cart_icon">
+            <img src="images/image-avatar.png" alt="Profile pic" class="avatar-icon">
+
+        </div>
+        
+    </div>
+    <div class="body-div">
+        <div class="product-image-div">
+            <div class="main-product-image-div" id="main_product_image_div"></div>
+            <div class="product-image-thumbnail-div">
+                <img src="images/image-product-1-thumbnail.jpg" alt="" class="product-image-thumbnail" id="thumbnail1" onclick="viewImage(this)">
+                <img src="images/image-product-2-thumbnail.jpg" alt="" class="product-image-thumbnail" id="thumbnail2" onclick="viewImage(this)">
+                <img src="images/image-product-3-thumbnail.jpg" alt="" class="product-image-thumbnail" id="thumbnail3" onclick="viewImage(this)">
+                <img src="images/image-product-4-thumbnail.jpg" alt="" class="product-image-thumbnail" id="thumbnail4" onclick="viewImage(this)">
+            </div>
+            
+        </div>
+        <div class="product-detail-div">
+            <h5>SNEAKER COMPANY</h5>
+            <H1 id="item_name">Fall Limited Edition Sneakers</H1>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+            <h3><span id="item_price">$125</span>   <span class="discount">50%</span></h3>
+            <h4><s>$250</s></h4>
+            <div class="button-div">
+                <button id="plus_button" onclick="qtyFunction(this.id)">+</button>
+                <h6 id="quantity">0</h6>
+                <button id="minus_button" onclick="qtyFunction(this.id)">-</button>            
+                <button id="add_to_cart_button"><img src="images/icon-cart.svg" alt="Cart image" class="cart-image">Add to Cart</button>
+            </div>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
